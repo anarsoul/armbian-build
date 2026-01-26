@@ -139,7 +139,7 @@
 		regulator-always-on;
 		regulator-boot-on;
 		enable-active-high;
-		gpio = <&gpio0 RK_PB1 GPIO_ACTIVE_HIGH>;
+		gpio = <&gpio4 RK_PB1 GPIO_ACTIVE_HIGH>;
 		pinctrl-names = "default";
 		pinctrl-0 = <&pcie_drv>;
 		regulator-min-microvolt = <3300000>;
@@ -208,7 +208,7 @@
 	vcc5v0_usb2t: vcc5v0-usb2t-regulator {
 		compatible = "regulator-fixed";
 		enable-active-high;
-		gpio = <&gpio0 RK_PD5 GPIO_ACTIVE_HIGH>;
+		gpio = <&gpio3 RK_PD5 GPIO_ACTIVE_HIGH>;
 		pinctrl-names = "default";
 		pinctrl-0 = <&vcc5v0_usb2t_en>;
 		regulator-name = "vcc5v0_usb2t";
@@ -218,7 +218,7 @@
 	vcc5v0_usb2b: vcc5v0-usb2b-regulator {
 		compatible = "regulator-fixed";
 		enable-active-high;
-		gpio = <&gpio0 RK_PC4 GPIO_ACTIVE_HIGH>;
+		gpio = <&gpio4 RK_PC4 GPIO_ACTIVE_HIGH>;
 		pinctrl-names = "default";
 		pinctrl-0 = <&vcc5v0_usb2b_en>;
 		regulator-name = "vcc5v0_usb2b";
